@@ -13,16 +13,16 @@ const BottomTabNavigator = ()=>{
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             if (route.name === 'Feed') {
-              iconName = focused ? 'book' : 'book-outline';
+              conName = focused ? 'compass' : 'compass-outline';
             } else if (route.name === 'CreateStory') {
-              iconName = focused ? 'create' : 'create-outline';
+              iconName = focused ? 'add-circle' : 'add-circle-outline';
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
-          activeTintColor: '',
-          inactiveTintColor: 'gray',
+          activeTintColor: 'black',
+          inactiveTintColor: 'black'
         }}>
         <Tab.Screen
           name="Feed"
