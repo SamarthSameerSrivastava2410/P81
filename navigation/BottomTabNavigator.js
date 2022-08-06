@@ -13,7 +13,7 @@ const BottomTabNavigator = ()=>{
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             if (route.name === 'Feed') {
-              conName = focused ? 'compass' : 'compass-outline';
+              iconName = focused ? 'compass' : 'compass-outline';
             } else if (route.name === 'CreateStory') {
               iconName = focused ? 'add-circle' : 'add-circle-outline';
             }
